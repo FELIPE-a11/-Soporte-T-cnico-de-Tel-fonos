@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #c3c3c4, #1c5c97e5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Fira Code', monospace;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ffd43b;
+}
+
+#chat-box {
+  height: 350px;
+  overflow-y: auto;
+  background: rgba(224, 214, 214, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  border: 1px solid rgba(226, 218, 218, 0.897);
+}
+
+.message {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 75%;
+  padding: 10px 15px;
+  border-radius: 16px;
+  font-size: 14px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.bubble.user {
+  background-color: rgba(201, 214, 218, 0.1);
+  border: 1px solid #61dafb;
+  color: #61dafb;
+  border-bottom-right-radius: 0;
+}
+
+.bubble.bot {
+  background-color: rgba(226, 235, 226, 0.1);
+  border: 1px solid #90ee90;
+  color: #90ee90;
+  border-bottom-left-radius: 0;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: 'Fira Code', monospace;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+button {
+  background-color: #3d8bfd;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1864ab;
+}
